@@ -1,0 +1,19 @@
+<launch>
+
+    <node name="puru_joy_node" 
+           pkg="joy" 
+          type="joy_node">
+          
+        <param name="autorepeat_rate" 
+               type="double"
+              value="10"/>
+              
+    </node>
+
+    <node name="puru_joystick_node" 
+           pkg="puru_joystick" 
+          type="puru_joystick" 
+        output="screen">
+    </node>
+
+</launch>
